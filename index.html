@@ -20,16 +20,35 @@
    
       <!-- navbar  -->
       <div class="text-center mt-6 w-[800px] h-[24px] mx-auto">
-        <div class="flex  space-x-2 p-2 rounded-full justify-end">
-          <a href="/mishalturkane.github.io/index.html" class="text-decoration: underline">home</a>
+        <div class="flex space-x-2 p-2 rounded-full justify-end">
+        <div class="mt-2">
+          <a href="/mishalturkane.github.io/index.html" class="underline ">home</a>
           <a href="/mishalturkane.github.io/blog.html">blog</a>
           <a href="/mishalturkane.github.io/gadgets.html">gadgets</a>
-          <button class="bg-green-500 text-black rounded-md px-2  transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-gray-700 font-md">
-            Open to work</button>
+        </div>
+      
+          <!-- Button with Blinking Red Circle -->
+          <button class="relative bg-green-500 text-black  rounded-md  px-4 py-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-gray-700 font-md">
+            <!-- Red Blinking Circle (Inside Button, Top-Left) -->
+            <div class="absolute top-0 left-0 w-3 h-3 bg-red-500 rounded-full animate-blink"></div>
+            Open to work
           </button>
         </div>
+      </div>
+      
+      <style>
+        @keyframes blink {
+          0% { opacity: 1; }
+          50% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        .animate-blink {
+          animation: blink 1s infinite;
+        }
+      </style>
+      
       </div> <div class="text-center  w-[800px] h-[24px] mx-auto">
-        <div class="flex  space-x-6 mt-1 pt-2 mr-2 rounded-full justify-end">
+        <div class="flex  space-x-6 mt-6 pt-2 mr-2 rounded-full justify-end">
          <a href="https://github.com/mishalturkane" target="_blank"><i class="fa-brands fa-github"></i></a>
          <a href="https://x.com/mishalturkane" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
          <a href="https://www.linkedin.com/in/mishalturkane/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>

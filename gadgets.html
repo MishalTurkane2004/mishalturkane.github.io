@@ -18,15 +18,25 @@
   <body class="bg-[#171717]  text-white font-[Outfit]">
     <!-- main container -->
    
-      <!-- navbar  -->
-      <div class="text-center mt-12 w-[800px] h-[24px] mx-auto">
-        <div class="flex  space-x-2 p-2 rounded-full justify-end">
-          <a href="/mishalturkane.github.io/index.html">home</a>
-          <a href="/mishalturkane.github.io/blog.html">blog</a>
-          <a href="">products</a>
-          <a href="">newsletter 🍃</a>
-        </div>
-      </div>
+        <!-- navbar  -->
+        <div class="text-center mt-12 w-[800px] h-[24px] mx-auto">
+            <div class="flex  space-x-2 p-2 rounded-full justify-end">
+              <a href="/mishalturkane.github.io/index.html" class="nav-link">home</a>
+              <a href="/mishalturkane.github.io/blog.html">blog</a>
+              <a href="">products</a>
+              <a href="/mishalturkane.github.io/gadgets.html">gadgets 🍃</a>
+            </div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const links = document.querySelectorAll(".nav-link");
+              links.forEach(link => {
+                if (link.href === window.location.href) {
+                  link.classList.add("underline", "text-gray-300");
+                }
+              });
+            });
+          </script>
       
       <!-- main content -->
       <div class="text-center   mt-10 w-[800px] mx-auto pt-3 h-[526px]">
@@ -44,12 +54,34 @@
 
         <div class="flex flex-col  items-start text-left ">
             <div class="mt-6">about me</div>
-             <div class="mt-6 space-y-4">Laptop: HP Pavilion , 11th Gen , 16gb, 512gb</div>
-            <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></a>
-        </div>  
-      
-
-      
+            <!--Laptop-->
+             <div class="mt-6 flex flex-col  items-start text-left  space-y-4">Laptop: HP Pavilion , 11th Gen , 16gb RAM, 512gb ROM
+                <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+             </div>
+            <!--Monitor-->
+            <div class="mt-6 flex flex-col  items-start text-left  space-y-4">Monitor: HP basics 75hrz
+                <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+             </div>
+              <!--Phone-->
+            <div class="mt-6 flex flex-col  items-start text-left  space-y-4">Phone: Redmi note 9 pro max , 6gb RAM, 64gb ROM
+                <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+             </div>
+              <!--Headphone-->
+            <div class="mt-6 flex flex-col  items-start text-left  space-y-4">Headphone
+                <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+             </div>
+              <!--Monitor-->
+            <div class="mt-6 flex flex-col  items-start text-left  space-y-4">Monitor Table
+                <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+             </div>
+              <!--Monitor-->
+            <div class="mt-6 flex flex-col  items-start text-left  space-y-4">lamp
+                <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+             </div> <!--Monitor-->
+             <div class="mt-6 flex flex-col  items-start text-left  space-y-4">pantab
+                 <a class="mt-2 text-gray-400 hover:text-gray-600" href="">link <span class="hover:ml-1"><i class="fa-solid ml-2 fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i></span></a>
+              </div>
+            </div>     
          </div>  
   </body>
 </html>

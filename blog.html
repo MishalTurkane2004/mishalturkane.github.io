@@ -18,15 +18,25 @@
   <body class="bg-[#171717]  text-white font-[Outfit]">
     <!-- main container -->
    
-      <!-- navbar  -->
-      <div class="text-center mt-12 w-[800px] h-[24px] mx-auto">
-        <div class="flex  space-x-2 p-2 rounded-full justify-end">
-          <a href="/mishalturkane.github.io/index.html">home</a>
-          <a href="/mishalturkane.github.io/blog.html">blog</a>
-          <a href="">products</a>
-          <a href="">newsletter 🍃</a>
-        </div>
-      </div>
+        <!-- navbar  -->
+        <div class="text-center mt-12 w-[800px] h-[24px] mx-auto">
+            <div class="flex  space-x-2 p-2 rounded-full justify-end">
+              <a href="/mishalturkane.github.io/index.html" class="nav-link">home</a>
+              <a href="/mishalturkane.github.io/blog.html">blog</a>
+              <a href="">products</a>
+              <a href="/mishalturkane.github.io/gadgets.html">gadgets 🍃</a>
+            </div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const links = document.querySelectorAll(".nav-link");
+              links.forEach(link => {
+                if (link.href === window.location.href) {
+                  link.classList.add("underline", "text-gray-300");
+                }
+              });
+            });
+          </script>
       
       <!-- main content -->
       <div class="text-center   mt-10 w-[800px] mx-auto pt-3 h-[526px]">
